@@ -1,0 +1,596 @@
+{
+    "flower_shop_data": {
+        "flowers": [
+            {
+                "name": "Rose",
+                "stock": 5,
+                "price": 3.50,
+                "image_url": "https://starrosesandplants.com/app/uploads/2024/04/RubyRed_Blooms_033.jpg"
+            },
+            {
+                "name": "Tulip",
+                "stock": 0,
+                "price": 2.25,
+                "image_url": "https://www.peternyssen.com/media/catalog/product/cache/c6c17162db85a636b9adf55085ecc473/d/a/daf83f8ccc1747e25c7415833cd0d234.jpg"
+            },
+            {
+                "name": "Lily",
+                "stock": 75,
+                "price": 4.75,
+                "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwNNSI6GwLLexJ7T0xAKzNZfdcuapoTMHefIZcWwad7LxqZkvP6tHngU-7l4Jccb51oo_Y6i6cc_7u7z_TEpiabYnK0Bqbv02-JWZvbw&s=10"
+            },
+            {
+                "name": "Daisy",
+                "stock": 300,
+                "price": 1.50,
+                "image_url": "https://www.applewoodseed.com/wp-content/uploads/2016/11/CMAD-1301.jpg"
+            },
+            {
+                "name": "Orchid",
+                "stock": 50,
+                "price": 8.99,
+                "image_url": "https://cdn2.1800flowers.com/wcsstore/Flowers/images/catalog/18436punx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&auto=webp"
+            },
+            {
+                "name": "Carnation",
+                "stock": 180,
+                "price": 1.99,
+                "image_url": "https://cdn.britannica.com/38/189538-050-6EC8A082/carnation-flowers.jpg"
+            },
+            {
+                "name": "Sunflower",
+                "stock": 90,
+                "price": 5.50,
+                "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-sOjfc9YbRGNO6fgk4P9xm5gTW7KkMfCrpA&s"
+            },
+            {
+                "name": "Baby's Breath",
+                "stock": 400,
+                "price": 0.99,
+                "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAw04rQbFnTxv6qb-FTAJIyilRXIv2edPIdinJtDrUHAHdrnkSzGOB42n4QAxgHjvpw81gcD7VKIv_vsqg0N4NKgB-5CsMFP0VGsUhFg&s=10"
+            },
+            {
+                "name": "Hydrangea",
+                "stock": 60,
+                "price": 6.50,
+                "image_url": "https://m.media-amazon.com/images/I/618vRodgP7L._AC_UF1000,1000_QL80_.jpg"
+            },
+            {
+                "name": "Peony",
+                "stock": 45,
+                "price": 7.99,
+                "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNTWm7xL4by76Xmqbbp_bigBP9Ssm2WcUpzqqQ5_gcx7BH6Y6OXmh1kMX51RwUNCQm4p_9X_A1S8ClRVLKjNX-hNomHhzV8N2IMu5MLgs&s=10"
+            },
+            {
+                "name": "Freesia",
+                "stock": 110,
+                "price": 3.25,
+                "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGYkckJ1t-SGB3OfLZFUVKikq1qGJZVICnM1fX0Jcy9ZQJ-f-ieov_JaDHnXk1dQXoT7QXgDnFaKK3YzD-BSNbNSkuWYEd_HOl0E-OFw&s=10"
+            }
+        ],
+        "employees": [
+            {
+                "name": "Sarah Chen",
+                "phone": "555-123-4567",
+                "salary": 55000.00
+            },
+            {
+                "name": "Mark Ramirez",
+                "phone": "555-987-6543",
+                "salary": 48000.00
+            },
+            {
+                "name": "Aisha Khan",
+                "phone": "555-555-1212",
+                "salary": 62000.00
+            },
+            {
+                "name": "David Lee",
+                "phone": "555-222-3333",
+                "salary": 51000.00
+            }
+        ],
+        "clients": [
+            {
+                "name": "Client 001",
+                "address": "10 Street Name, City 1",
+                "phone": "555-001-002"
+            },
+            {
+                "name": "Client 002",
+                "address": "20 Street Name, City 1",
+                "phone": "555-002-004"
+            },
+            {
+                "name": "Client 003",
+                "address": "30 Street Name, City 1",
+                "phone": "555-003-006"
+            },
+            {
+                "name": "Client 004",
+                "address": "40 Street Name, City 1",
+                "phone": "555-004-008"
+            },
+            {
+                "name": "Client 005",
+                "address": "50 Street Name, City 1",
+                "phone": "555-005-010"
+            },
+            {
+                "name": "Client 006",
+                "address": "60 Street Name, City 1",
+                "phone": "555-006-012"
+            },
+            {
+                "name": "Client 007",
+                "address": "70 Street Name, City 1",
+                "phone": "555-007-014"
+            },
+            {
+                "name": "Client 008",
+                "address": "80 Street Name, City 1",
+                "phone": "555-008-016"
+            },
+            {
+                "name": "Client 009",
+                "address": "90 Street Name, City 1",
+                "phone": "555-009-018"
+            },
+            {
+                "name": "Client 010",
+                "address": "100 Street Name, City 2",
+                "phone": "555-010-020"
+            },
+            {
+                "name": "Client 011",
+                "address": "110 Street Name, City 2",
+                "phone": "555-011-022"
+            },
+            {
+                "name": "Client 012",
+                "address": "120 Street Name, City 2",
+                "phone": "555-012-024"
+            },
+            {
+                "name": "Client 013",
+                "address": "130 Street Name, City 2",
+                "phone": "555-013-026"
+            },
+            {
+                "name": "Client 014",
+                "address": "140 Street Name, City 2",
+                "phone": "555-014-028"
+            },
+            {
+                "name": "Client 015",
+                "address": "150 Street Name, City 2",
+                "phone": "555-015-030"
+            },
+            {
+                "name": "Client 016",
+                "address": "160 Street Name, City 2",
+                "phone": "555-016-032"
+            },
+            {
+                "name": "Client 017",
+                "address": "170 Street Name, City 2",
+                "phone": "555-017-034"
+            },
+            {
+                "name": "Client 018",
+                "address": "180 Street Name, City 2",
+                "phone": "555-018-036"
+            },
+            {
+                "name": "Client 019",
+                "address": "190 Street Name, City 2",
+                "phone": "555-019-038"
+            },
+            {
+                "name": "Client 020",
+                "address": "200 Street Name, City 3",
+                "phone": "555-020-040"
+            },
+            {
+                "name": "Client 021",
+                "address": "210 Street Name, City 3",
+                "phone": "555-021-042"
+            },
+            {
+                "name": "Client 022",
+                "address": "220 Street Name, City 3",
+                "phone": "555-022-044"
+            },
+            {
+                "name": "Client 023",
+                "address": "230 Street Name, City 3",
+                "phone": "555-023-046"
+            },
+            {
+                "name": "Client 024",
+                "address": "240 Street Name, City 3",
+                "phone": "555-024-048"
+            },
+            {
+                "name": "Client 025",
+                "address": "250 Street Name, City 3",
+                "phone": "555-025-050"
+            },
+            {
+                "name": "Client 026",
+                "address": "260 Street Name, City 3",
+                "phone": "555-026-052"
+            },
+            {
+                "name": "Client 027",
+                "address": "270 Street Name, City 3",
+                "phone": "555-027-054"
+            },
+            {
+                "name": "Client 028",
+                "address": "280 Street Name, City 3",
+                "phone": "555-028-056"
+            },
+            {
+                "name": "Client 029",
+                "address": "290 Street Name, City 3",
+                "phone": "555-029-058"
+            },
+            {
+                "name": "Client 030",
+                "address": "300 Street Name, City 4",
+                "phone": "555-030-060"
+            },
+            {
+                "name": "Client 031",
+                "address": "310 Street Name, City 4",
+                "phone": "555-031-062"
+            },
+            {
+                "name": "Client 032",
+                "address": "320 Street Name, City 4",
+                "phone": "555-032-064"
+            },
+            {
+                "name": "Client 033",
+                "address": "330 Street Name, City 4",
+                "phone": "555-033-066"
+            },
+            {
+                "name": "Client 034",
+                "address": "340 Street Name, City 4",
+                "phone": "555-034-068"
+            },
+            {
+                "name": "Client 035",
+                "address": "350 Street Name, City 4",
+                "phone": "555-035-070"
+            },
+            {
+                "name": "Client 036",
+                "address": "360 Street Name, City 4",
+                "phone": "555-036-072"
+            },
+            {
+                "name": "Client 037",
+                "address": "370 Street Name, City 4",
+                "phone": "555-037-074"
+            },
+            {
+                "name": "Client 038",
+                "address": "380 Street Name, City 4",
+                "phone": "555-038-076"
+            },
+            {
+                "name": "Client 039",
+                "address": "390 Street Name, City 4",
+                "phone": "555-039-078"
+            },
+            {
+                "name": "Client 040",
+                "address": "400 Street Name, City 5",
+                "phone": "555-040-080"
+            },
+            {
+                "name": "Client 041",
+                "address": "410 Street Name, City 5",
+                "phone": "555-041-082"
+            },
+            {
+                "name": "Client 042",
+                "address": "420 Street Name, City 5",
+                "phone": "555-042-084"
+            },
+            {
+                "name": "Client 043",
+                "address": "430 Street Name, City 5",
+                "phone": "555-043-086"
+            },
+            {
+                "name": "Client 044",
+                "address": "440 Street Name, City 5",
+                "phone": "555-044-088"
+            },
+            {
+                "name": "Client 045",
+                "address": "450 Street Name, City 5",
+                "phone": "555-045-090"
+            },
+            {
+                "name": "Client 046",
+                "address": "460 Street Name, City 5",
+                "phone": "555-046-092"
+            },
+            {
+                "name": "Client 047",
+                "address": "470 Street Name, City 5",
+                "phone": "555-047-094"
+            },
+            {
+                "name": "Client 048",
+                "address": "480 Street Name, City 5",
+                "phone": "555-048-096"
+            },
+            {
+                "name": "Client 049",
+                "address": "490 Street Name, City 5",
+                "phone": "555-049-098"
+            },
+            {
+                "name": "Client 050",
+                "address": "500 Street Name, City 6",
+                "phone": "555-050-000"
+            },
+            {
+                "name": "Client 051",
+                "address": "510 Street Name, City 6",
+                "phone": "555-051-002"
+            },
+            {
+                "name": "Client 052",
+                "address": "520 Street Name, City 6",
+                "phone": "555-052-004"
+            },
+            {
+                "name": "Client 053",
+                "address": "530 Street Name, City 6",
+                "phone": "555-053-006"
+            },
+            {
+                "name": "Client 054",
+                "address": "540 Street Name, City 6",
+                "phone": "555-054-008"
+            },
+            {
+                "name": "Client 055",
+                "address": "550 Street Name, City 6",
+                "phone": "555-055-010"
+            },
+            {
+                "name": "Client 056",
+                "address": "560 Street Name, City 6",
+                "phone": "555-056-012"
+            },
+            {
+                "name": "Client 057",
+                "address": "570 Street Name, City 6",
+                "phone": "555-057-014"
+            },
+            {
+                "name": "Client 058",
+                "address": "580 Street Name, City 6",
+                "phone": "555-058-016"
+            },
+            {
+                "name": "Client 059",
+                "address": "590 Street Name, City 6",
+                "phone": "555-059-018"
+            },
+            {
+                "name": "Client 060",
+                "address": "600 Street Name, City 7",
+                "phone": "555-060-020"
+            },
+            {
+                "name": "Client 061",
+                "address": "610 Street Name, City 7",
+                "phone": "555-061-022"
+            },
+            {
+                "name": "Client 062",
+                "address": "620 Street Name, City 7",
+                "phone": "555-062-024"
+            },
+            {
+                "name": "Client 063",
+                "address": "630 Street Name, City 7",
+                "phone": "555-063-026"
+            },
+            {
+                "name": "Client 064",
+                "address": "640 Street Name, City 7",
+                "phone": "555-064-028"
+            },
+            {
+                "name": "Client 065",
+                "address": "650 Street Name, City 7",
+                "phone": "555-065-030"
+            },
+            {
+                "name": "Client 066",
+                "address": "660 Street Name, City 7",
+                "phone": "555-066-032"
+            },
+            {
+                "name": "Client 067",
+                "address": "670 Street Name, City 7",
+                "phone": "555-067-034"
+            },
+            {
+                "name": "Client 068",
+                "address": "680 Street Name, City 7",
+                "phone": "555-068-036"
+            },
+            {
+                "name": "Client 069",
+                "address": "690 Street Name, City 7",
+                "phone": "555-069-038"
+            },
+            {
+                "name": "Client 070",
+                "address": "700 Street Name, City 8",
+                "phone": "555-070-040"
+            },
+            {
+                "name": "Client 071",
+                "address": "710 Street Name, City 8",
+                "phone": "555-071-042"
+            },
+            {
+                "name": "Client 072",
+                "address": "720 Street Name, City 8",
+                "phone": "555-072-044"
+            },
+            {
+                "name": "Client 073",
+                "address": "730 Street Name, City 8",
+                "phone": "555-073-046"
+            },
+            {
+                "name": "Client 074",
+                "address": "740 Street Name, City 8",
+                "phone": "555-074-048"
+            },
+            {
+                "name": "Client 075",
+                "address": "750 Street Name, City 8",
+                "phone": "555-075-050"
+            },
+            {
+                "name": "Client 076",
+                "address": "760 Street Name, City 8",
+                "phone": "555-076-052"
+            },
+            {
+                "name": "Client 077",
+                "address": "770 Street Name, City 8",
+                "phone": "555-077-054"
+            },
+            {
+                "name": "Client 078",
+                "address": "780 Street Name, City 8",
+                "phone": "555-078-056"
+            },
+            {
+                "name": "Client 079",
+                "address": "790 Street Name, City 8",
+                "phone": "555-079-058"
+            },
+            {
+                "name": "Client 080",
+                "address": "800 Street Name, City 9",
+                "phone": "555-080-060"
+            },
+            {
+                "name": "Client 081",
+                "address": "810 Street Name, City 9",
+                "phone": "555-081-062"
+            },
+            {
+                "name": "Client 082",
+                "address": "820 Street Name, City 9",
+                "phone": "555-082-064"
+            },
+            {
+                "name": "Client 083",
+                "address": "830 Street Name, City 9",
+                "phone": "555-083-066"
+            },
+            {
+                "name": "Client 084",
+                "address": "840 Street Name, City 9",
+                "phone": "555-084-068"
+            },
+            {
+                "name": "Client 085",
+                "address": "850 Street Name, City 9",
+                "phone": "555-085-070"
+            },
+            {
+                "name": "Client 086",
+                "address": "860 Street Name, City 9",
+                "phone": "555-086-072"
+            },
+            {
+                "name": "Client 087",
+                "address": "870 Street Name, City 9",
+                "phone": "555-087-074"
+            },
+            {
+                "name": "Client 088",
+                "address": "880 Street Name, City 9",
+                "phone": "555-088-076"
+            },
+            {
+                "name": "Client 089",
+                "address": "890 Street Name, City 9",
+                "phone": "555-089-078"
+            },
+            {
+                "name": "Client 090",
+                "address": "900 Street Name, City 10",
+                "phone": "555-090-080"
+            },
+            {
+                "name": "Client 091",
+                "address": "910 Street Name, City 10",
+                "phone": "555-091-082"
+            },
+            {
+                "name": "Client 092",
+                "address": "920 Street Name, City 10",
+                "phone": "555-092-084"
+            },
+            {
+                "name": "Client 093",
+                "address": "930 Street Name, City 10",
+                "phone": "555-093-086"
+            },
+            {
+                "name": "Client 094",
+                "address": "940 Street Name, City 10",
+                "phone": "555-094-088"
+            },
+            {
+                "name": "Client 095",
+                "address": "950 Street Name, City 10",
+                "phone": "555-095-090"
+            },
+            {
+                "name": "Client 096",
+                "address": "960 Street Name, City 10",
+                "phone": "555-096-092"
+            },
+            {
+                "name": "Client 097",
+                "address": "970 Street Name, City 10",
+                "phone": "555-097-094"
+            },
+            {
+                "name": "Client 098",
+                "address": "980 Street Name, City 10",
+                "phone": "555-098-096"
+            },
+            {
+                "name": "Client 099",
+                "address": "990 Street Name, City 10",
+                "phone": "555-099-098"
+            },
+            {
+                "name": "Client 100",
+                "address": "1000 Street Name, City 11",
+                "phone": "555-100-000"
+            }
+        ]
+    }
+}
