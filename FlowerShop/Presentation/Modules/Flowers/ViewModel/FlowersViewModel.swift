@@ -9,4 +9,21 @@ import Foundation
 
 class FlowersViewModel {
     
+    private let getFlowersUseCase: GetFlowersUseCase
+    
+    var flowers: [Flowers] = []
+    var onReload: (() -> Void)?
+    
+    init(getFlowersUseCase: GetFlowersUseCase) {
+        self.getFlowersUseCase = getFlowersUseCase
+    }
+    
+    func loadFlowers() {
+        getFlowersUseCase.execute { [weak self] flowers in
+            self?.flowers = flowers
+            DispatchQueue.main.async {
+                self?.onReload?()
+            }
+        }
+    }
 }
