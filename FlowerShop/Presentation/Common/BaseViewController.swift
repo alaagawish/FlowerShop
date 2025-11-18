@@ -19,6 +19,7 @@ class BaseViewController: UIViewController, BaseProtocol {
         initValues()
         registerCells()
         bindViewModel()
+        createGestures()
     }
     func bindViewModel() {
         
@@ -29,5 +30,13 @@ class BaseViewController: UIViewController, BaseProtocol {
     func initValues() {
         
     }
+    func createGestures() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tapGesture.cancelsTouchesInView = false
+        view.addGestureRecognizer(tapGesture)
+    }
     
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
