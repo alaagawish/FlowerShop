@@ -10,9 +10,13 @@ import UIKit
 class ClientsViewController: BaseViewController {
     static let identifier = "ClientsViewController"
     
+    @IBOutlet private weak var updateTitle: UILabel!
+    @IBOutlet private weak var phoneTextField: UITextField!
+    @IBOutlet private weak var addressTetField: UITextField!
+    @IBOutlet private weak var updateClientView: UIView!
     @IBOutlet private weak var customersTbaleView: UITableView!
     private var clients: [Clients] = []
-    
+    private var currentIndex = 0
     private let clientsViewModel = ClientsViewModel(
         getClientsUseCase: DIContainer.shared.getClientsUseCase
     )
@@ -34,6 +38,16 @@ class ClientsViewController: BaseViewController {
         clientsViewModel.loadClients()
     }
     
+    @IBAction func closeUpdate(_ sender: Any) {
+        updateClientView.isHidden = true
+    }
+    @IBAction func update(_ sender: Any) {
+        updateClientView.isHidden = true
+        
+        clients[currentIndex].address = addressTetField.text
+        clients[currentIndex].phone = phoneTextField.text
+        customersTbaleView.reloadData()
+    }
 }
 extension ClientsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -54,7 +68,16 @@ extension ClientsViewController: UITableViewDelegate, UITableViewDataSource {
             customersTbaleView.reloadData()
             completionHandler(true)
         }
-        return UISwipeActionsConfiguration(actions: [deleteAction])
+        let updateAction = UIContextualAction(style: .normal, title: "Update") { [weak self] (_, _, completionHandler) in
+            guard let self = self else { return }
+            currentIndex = indexPath.row
+            updateTitle.text = "Update Address or Phone for \(clients[indexPath.row].name ?? "")"
+            addressTetField.text = clients[indexPath.row].address
+            phoneTextField.text = clients[indexPath.row].phone
+            updateClientView.isHidden = false
+            completionHandler(true)
+        }
+        return UISwipeActionsConfiguration(actions: [updateAction, deleteAction])
         
     }
     

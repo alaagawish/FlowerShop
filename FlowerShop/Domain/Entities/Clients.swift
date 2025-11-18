@@ -10,8 +10,8 @@ import Foundation
 struct Clients: Codable {
     
     let name: String?
-    let address: String?
-    let phone: String?
+    var address: String?
+    var phone: String?
     
     private enum CodingKeys: String, CodingKey {
         case name = "name"

@@ -107,26 +107,140 @@
                                     <outlet property="delegate" destination="EpZ-jc-5sr" id="ZaY-x4-pan"/>
                                 </connections>
                             </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53z-2J-B7I">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJq-uI-YgU">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                        <connections>
+                                            <action selector="closeUpdate:" destination="EpZ-jc-5sr" eventType="touchUpInside" id="kgE-dO-VC0"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M8x-nd-Tbi">
+                                        <rect key="frame" x="16" y="329" width="361" height="194"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbg-2M-Zz6">
+                                                <rect key="frame" x="303" y="8" width="50" height="35"/>
+                                                <color key="tintColor" red="0.73725497719999999" green="0.2117646933" blue="0.13333332540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="xmark.circle.fill" catalog="system" title=""/>
+                                                <connections>
+                                                    <action selector="closeUpdate:" destination="EpZ-jc-5sr" eventType="touchUpInside" id="Kfs-RE-XBC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDe-uS-e7c">
+                                                <rect key="frame" x="16" y="147" width="329" height="39"/>
+                                                <color key="tintColor" red="0.73725497719999999" green="0.2117646933" blue="0.13333332540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Update"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.73725497719999999" green="0.2117646933" blue="0.13333332540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="update:" destination="EpZ-jc-5sr" eventType="touchUpInside" id="psU-Gk-MLS"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update Address or Phone for " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vle-wa-AYn">
+                                                <rect key="frame" x="16" y="16" width="189.66666666666666" height="15.666666666666664"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yg8-F9-PaD">
+                                                <rect key="frame" x="16.000000000000004" y="63" width="56.333333333333343" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnn-j4-lcj">
+                                                <rect key="frame" x="15.999999999999996" y="109" width="43.666666666666657" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v4b-kz-fdg">
+                                                <rect key="frame" x="80.333333333333343" y="55" width="272.66666666666663" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ddh-UT-68o">
+                                                <rect key="frame" x="67.666666666666657" y="101" width="285.33333333333337" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Ddh-UT-68o" firstAttribute="centerY" secondItem="fnn-j4-lcj" secondAttribute="centerY" id="06M-nS-Yi0"/>
+                                            <constraint firstItem="Vle-wa-AYn" firstAttribute="top" secondItem="M8x-nd-Tbi" secondAttribute="top" constant="16" id="34d-Tc-efl"/>
+                                            <constraint firstItem="Vle-wa-AYn" firstAttribute="leading" secondItem="M8x-nd-Tbi" secondAttribute="leading" constant="16" id="3QB-tr-yf9"/>
+                                            <constraint firstItem="Yg8-F9-PaD" firstAttribute="leading" secondItem="M8x-nd-Tbi" secondAttribute="leading" constant="16" id="9FR-hD-Goh"/>
+                                            <constraint firstItem="v4b-kz-fdg" firstAttribute="centerY" secondItem="Yg8-F9-PaD" secondAttribute="centerY" id="BEt-r0-VH9"/>
+                                            <constraint firstItem="yDe-uS-e7c" firstAttribute="leading" secondItem="M8x-nd-Tbi" secondAttribute="leading" constant="16" id="CF2-ZT-URa"/>
+                                            <constraint firstAttribute="trailing" secondItem="cbg-2M-Zz6" secondAttribute="trailing" constant="8" id="Fjz-x1-mXC"/>
+                                            <constraint firstItem="v4b-kz-fdg" firstAttribute="top" secondItem="cbg-2M-Zz6" secondAttribute="bottom" constant="12" id="H5w-ya-4Bk"/>
+                                            <constraint firstAttribute="trailing" secondItem="v4b-kz-fdg" secondAttribute="trailing" constant="8" id="KzM-IJ-w4l"/>
+                                            <constraint firstItem="fnn-j4-lcj" firstAttribute="leading" secondItem="M8x-nd-Tbi" secondAttribute="leading" constant="16" id="LwY-iH-taQ"/>
+                                            <constraint firstItem="Ddh-UT-68o" firstAttribute="top" secondItem="v4b-kz-fdg" secondAttribute="bottom" constant="12" id="Pjo-h2-peD"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ddh-UT-68o" secondAttribute="trailing" constant="8" id="bHG-tY-t6s"/>
+                                            <constraint firstItem="v4b-kz-fdg" firstAttribute="leading" secondItem="Yg8-F9-PaD" secondAttribute="trailing" constant="8" id="cXi-Iu-buU"/>
+                                            <constraint firstAttribute="bottom" secondItem="yDe-uS-e7c" secondAttribute="bottom" constant="8" id="dTA-S2-w0P"/>
+                                            <constraint firstAttribute="trailing" secondItem="yDe-uS-e7c" secondAttribute="trailing" constant="16" id="e9f-Fl-9c9"/>
+                                            <constraint firstItem="yDe-uS-e7c" firstAttribute="top" secondItem="Ddh-UT-68o" secondAttribute="bottom" constant="12" id="fr4-du-hjq"/>
+                                            <constraint firstItem="cbg-2M-Zz6" firstAttribute="top" secondItem="M8x-nd-Tbi" secondAttribute="top" constant="8" id="sTu-pt-TA1"/>
+                                            <constraint firstItem="Ddh-UT-68o" firstAttribute="leading" secondItem="fnn-j4-lcj" secondAttribute="trailing" constant="8" id="sxU-UU-jQd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.16746093750000002" green="0.16746093750000002" blue="0.16746093750000002" alpha="0.54041043133802813" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="CJq-uI-YgU" secondAttribute="bottom" id="1G0-yF-LmS"/>
+                                    <constraint firstItem="M8x-nd-Tbi" firstAttribute="leading" secondItem="53z-2J-B7I" secondAttribute="leading" constant="16" id="45Y-rl-btl"/>
+                                    <constraint firstItem="M8x-nd-Tbi" firstAttribute="centerY" secondItem="53z-2J-B7I" secondAttribute="centerY" id="NUC-JM-W6A"/>
+                                    <constraint firstItem="CJq-uI-YgU" firstAttribute="leading" secondItem="53z-2J-B7I" secondAttribute="leading" id="PZC-1l-flt"/>
+                                    <constraint firstAttribute="trailing" secondItem="CJq-uI-YgU" secondAttribute="trailing" id="dac-cC-5WL"/>
+                                    <constraint firstAttribute="trailing" secondItem="M8x-nd-Tbi" secondAttribute="trailing" constant="16" id="dm2-hi-drb"/>
+                                    <constraint firstItem="CJq-uI-YgU" firstAttribute="top" secondItem="53z-2J-B7I" secondAttribute="top" id="yU3-9r-aeD"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="C2K-bX-CuY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="d2s-mk-aRh" firstAttribute="top" secondItem="C2K-bX-CuY" secondAttribute="top" constant="12" id="06O-iM-aRj"/>
+                            <constraint firstItem="53z-2J-B7I" firstAttribute="leading" secondItem="5Ok-q9-Lzv" secondAttribute="leading" id="3jY-yA-R2G"/>
                             <constraint firstItem="C2K-bX-CuY" firstAttribute="bottom" secondItem="IVe-VZ-Yrx" secondAttribute="bottom" id="7mn-tz-egY"/>
                             <constraint firstItem="d2s-mk-aRh" firstAttribute="leading" secondItem="C2K-bX-CuY" secondAttribute="leading" constant="16" id="MN6-WN-vDh"/>
+                            <constraint firstItem="53z-2J-B7I" firstAttribute="top" secondItem="5Ok-q9-Lzv" secondAttribute="top" id="RLa-FU-AyJ"/>
                             <constraint firstItem="IVe-VZ-Yrx" firstAttribute="top" secondItem="d2s-mk-aRh" secondAttribute="bottom" constant="8" id="U3X-TY-7v4"/>
                             <constraint firstItem="IVe-VZ-Yrx" firstAttribute="leading" secondItem="C2K-bX-CuY" secondAttribute="leading" id="VgE-fK-qta"/>
+                            <constraint firstAttribute="trailing" secondItem="53z-2J-B7I" secondAttribute="trailing" id="eR9-37-1Pn"/>
+                            <constraint firstAttribute="bottom" secondItem="53z-2J-B7I" secondAttribute="bottom" id="s6P-hZ-Ksv"/>
                             <constraint firstItem="C2K-bX-CuY" firstAttribute="trailing" secondItem="IVe-VZ-Yrx" secondAttribute="trailing" id="uDV-se-5oL"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Customers" image="person.3.sequence" catalog="system" id="S3t-UT-q0n"/>
                     <connections>
+                        <outlet property="addressTetField" destination="v4b-kz-fdg" id="kRY-nc-U2k"/>
                         <outlet property="customersTbaleView" destination="IVe-VZ-Yrx" id="OrN-Oz-cnt"/>
+                        <outlet property="phoneTextField" destination="Ddh-UT-68o" id="fwA-vh-4aT"/>
+                        <outlet property="updateClientView" destination="53z-2J-B7I" id="uhM-of-cAJ"/>
+                        <outlet property="updateTitle" destination="Vle-wa-AYn" id="BNB-0d-GG9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FAY-hs-mU7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="954" y="661"/>
+            <point key="canvasLocation" x="953.43511450381675" y="660.56338028169023"/>
         </scene>
         <!--Employees-->
         <scene sceneID="JFt-5P-iHB">
